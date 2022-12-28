@@ -1,0 +1,32 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+h1 {
+  margin: 1rem;
+}
+.box {
+  background-color: tan;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  height: 15rem;
+  /* margin: 0.1rem; */
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  transform: translateX(300%);
+  transition: transform 0.5s ease-in-out;
+}
+.box.show {
+  transform: translateX(0);
+}
+.box:nth-of-type(even) {
+  transform: translateX(-300%);
+}
